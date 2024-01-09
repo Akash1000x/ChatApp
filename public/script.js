@@ -27,6 +27,7 @@ function append(msg,position){
     p.innerText = msg;
     p.id = position;
     writeMsg.appendChild(p);
+    window.scrollTo(0,document.body.scrollHeight);
 }
 
 form.addEventListener('submit' ,(e) => {
@@ -43,7 +44,7 @@ form.addEventListener('submit' ,(e) => {
 
 
 socket.on('user-joined',name => {
-   append(`${name} joined the chat`,'left');
+   append(`${name} joined the chat`,'center');
 });
 
 socket.on('receive',data => {
@@ -51,5 +52,5 @@ socket.on('receive',data => {
 });
 
 socket.on('leave',name => {
-    append(`${name} left the chat`,'left');
+    append(`${name} left the chat`,'center');
 });

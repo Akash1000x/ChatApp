@@ -9,10 +9,10 @@
 
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: 	#252526;
   position: sticky;
-  margin-bottom: 100px;
+  padding-bottom: 46px;
   z-index: 5;
 }
 
@@ -31,14 +31,20 @@
 #btn {
   border: none;
   padding: 0px 1rem;
-  border-radius: 0.5rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: #252526;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 #msg {
   flex-grow: 1;
   border: none;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   padding: 5px;
   padding-left: 10px;
 }
@@ -58,9 +64,8 @@
 
 p {
   display: block;
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
-  margin-right: .5rem;
+  margin: 0.5rem;
+  
   padding: 0.3rem;
  
   border-radius: 0.3rem;
@@ -83,6 +88,10 @@ p {
   background-image:linear-gradient(to right,rgb(255, 0, 0),blue) ;
 }
 
+#center{
+  align-self: center;
+  background-color: #4d58ece1;
+}
 
 .user-name{
     position: absolute;
@@ -126,7 +135,7 @@ p {
   
   #name:focus {
     outline: none;
-    outline: 1px solid rgba(0, 0, 0, 0.384);
+    /* outline: 1px solid rgba(0, 0, 0, 0.384); */
   }
 
   #btn2{
