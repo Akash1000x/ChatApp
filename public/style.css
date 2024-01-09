@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: 	#252526;
+  position: sticky;
+  margin-bottom: 100px;
+  z-index: 5;
+}
+
+#form {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(185, 185, 185, 0.63);
+  backdrop-filter: blur(100px);
+}
+
+#btn {
+  border: none;
+  padding: 0px 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#msg {
+  flex-grow: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+#msg:focus {
+  outline: none;
+  outline: 1px solid rgba(0, 0, 0, 0.384);
+}
+
+#message {
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  display: block;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: .5rem;
+  padding: 0.3rem;
+ 
+  border-radius: 0.3rem;
+  max-width: 45%;
+  min-height: 2rem;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+#left {
+  align-self: self-start;
+  /* background-image:linear-gradient(to right,rgba(0, 0, 0, 0.911),rgb(0, 0, 0)) ; */
+  background-color: #020202e1;
+  
+}
+
+
+#right {
+  align-self: flex-end;
+  background-image:linear-gradient(to right,rgb(255, 0, 0),blue) ;
+}
+
+
+.user-name{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(201, 199, 168, 0.404);
+    backdrop-filter: blur(1px);
+    opacity: 1;
+    z-index: 10;
+}
+
+.user-name > div{
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(253, 253, 253, 0.24);
+    backdrop-filter: blur(2px);
+    height: 150px;
+    width: 250px;
+    border: 1px solid black;
+    
+}
+
+
+
+#name{
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: .5rem;
+  }
+  
+  #name:focus {
+    outline: none;
+    outline: 1px solid rgba(0, 0, 0, 0.384);
+  }
+
+  #btn2{
+    border: none;
+    padding: .3rem 1rem;
+    margin-top: .2rem;
+    background-color: rgba(0, 0, 0, 0.699);
+    cursor: pointer;
+    color: white;
+    border-radius: 0.5rem;
+  }
+
+.hide{
+    z-index: 0;
+    opacity: 0;
+}
