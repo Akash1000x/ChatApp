@@ -1,5 +1,5 @@
 
-const socket = io('http://localhost:3000');
+const socket = io('https://chat-app-phi-gray.vercel.app/');
 
 
 const writeMsg = document.getElementById('message');
